@@ -9,10 +9,13 @@ const Title = () => {
     
 };
 
-// React Functional Component
+//  Component composition
 const HeadingComponent = () => {
     return (
         <div className="container">
+            {/* All are same  */}
+            {Title()}
+            <Title></Title>
             <Title />
             <h1 className="head">Hello World using Functional Component 😛</h1>
         </div>
